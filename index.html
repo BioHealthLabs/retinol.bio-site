@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Retinol.bio – Independent Retinoid Reviews (Coming Soon)</title>
+    <meta name="description"
+          content="Retinol.bio will be your independent guide to the most effective retinol and retinal products. Until launch, visit Retynol.com for our live product comparison." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical: Retinol.bio is the main brand/domain -->
+    <link rel="canonical" href="https://retinol.bio/" />
+
+    <!-- Basic Open Graph -->
+    <meta property="og:title" content="Retinol.bio – Independent Retinoid Reviews" />
+    <meta property="og:description"
+          content="Soon: evidence-based reviews of retinol, retinal and tretinoin. For now, visit Retynol.com for our live comparison." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://retinol.bio/" />
+    <meta property="og:image" content="https://retinol.bio/og-image-retinol.jpg" />
+
+    <!-- Google Analytics 4 – replace with your own tag if you want tracking here too -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
+
+    <style>
+        :root {
+            --bg: #f9fafb;
+            --card-bg: #ffffff;
+            --border: #e5e7eb;
+            --text-main: #0f172a;
+            --text-muted: #6b7280;
+            --accent: #fb7185; /* soft pink */
+            --accent-soft: #ffe4ef;
+            --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-main);
+            background: radial-gradient(circle at top, #fdf2f8 0, #f9fafb 40%, #f9fafb 100%);
+            color: var(--text-main);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 520px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            border: 1px solid var(--border);
+            padding: 24px 22px 26px;
+            box-shadow:
+                0 18px 40px rgba(15, 23, 42, 0.06),
+                0 2px 8px rgba(15, 23, 42, 0.03);
+        }
+
+        .brand {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 8px;
+        }
+
+        .highlight {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+
+        p {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .link-area {
+            margin-top: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 11px 18px;
+            border-radius: 999px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent), #ec4899);
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .btn-primary span.chevron {
+            font-size: 16px;
+        }
+
+        .secondary-text {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .secondary-text a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .secondary-text a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 16px;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="card">
+        <div class="brand">Retinol.bio</div>
+        <span class="highlight">Coming soon</span>
+        <h1>Independent retinoid reviews are on their way.</h1>
+        <p>
+            Retinol.bio will soon launch as an evidence-based guide to retinol, retinal and tretinoin – 
+            with clear ingredient breakdowns, honest pros & cons and no sponsored rankings.
+        </p>
+        <p>
+            Until we’re live, you can already compare popular retinol products on our typo-sibling:
+        </p>
+
+        <div class="link-area">
+            <a href="https://retynol.com/" class="btn-primary">
+                Visit live comparison at Retynol.com
+                <span class="chevron">›</span>
+            </a>
+            <div class="secondary-text">
+                Operated by <strong>ronarn</strong>. Affiliate-supported, reader-first skincare content.
+            </div>
+        </div>
+
+        <div class="footer">
+            © <span id="year"></span> Retinol.bio – All rights reserved.
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
