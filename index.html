@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Retinol.bio – Evidence-Based Retinol Guide (2025)</title>
+  <title>Retinol.bio – Evidence-Based Retinol Education (2025)</title>
   <meta name="description"
-        content="Retinol.bio is an independent, science-based guide to retinol, retinal and tretinoin. Learn how vitamin A works, how to start safely, side effects, and when to see a dermatologist." />
+        content="Retinol.bio is a clinical, evidence-based guide to retinol, retinal and tretinoin. Learn how vitamin A works in the skin, how to start safely, manage side effects and when to see a dermatologist." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://retinol.bio/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Retinol.bio – Evidence-Based Retinol Guide" />
+  <meta property="og:title" content="Retinol.bio – Clinical Retinol Education" />
   <meta property="og:description"
-        content="Independent, research-based information on retinol, retinal and tretinoin. Learn how to start safely and avoid barrier damage." />
+        content="Independent, science-based information on retinol, retinal and tretinoin. Understand vitamin A skincare before you buy anything." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://retinol.bio/" />
   <meta property="og:image" content="https://retinol.bio/og-image-retinol-bio.jpg" />
 
-  <!-- Structured data: WebSite + FAQ, NO Product schema -->
+  <!-- Structured data: WebSite -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,6 +34,7 @@
   }
   </script>
 
+  <!-- Structured data: FAQ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -75,243 +76,325 @@
   }
   </script>
 
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3DE12V13R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P3DE12V13R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P3DE12V13R');
+  </script>
 
-  gtag('config', 'G-P3DE12V13R');
-</script>
-
-
-  <!-- Reuse the same styles.css you already have from Retynol/Hylaronic -->
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
 <div class="page">
 
-  <!-- HEADER -->
-  <header>
+  <!-- TOP BAR / LOGO -->
+  <header class="site-header">
     <div class="brand">
-      <div class="brand-name">Retinol.bio</div>
+      <div class="brand-mark">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Retinol.bio</span>
+      </div>
       <div class="brand-tagline">
-        Evidence-based retinol education for real people – no sponsorships, no fluff.
+        Clinical, evidence-based retinol education. No sponsorships. No fluff.
       </div>
     </div>
-    <div class="trust-tags">
-      <span class="trust-tag">Science-based</span>
-      <span class="trust-tag">No sponsorships</span>
-      <span class="trust-tag">Independent</span>
-    </div>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#retinol-101">Basics</a>
+      <a href="#compare-options">Retinol vs retinal vs tretinoin</a>
+      <a href="#routine">Routine</a>
+      <a href="#risks">Side effects</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://retynol.com/" class="nav-cta" target="_blank" rel="noopener">
+        Compare products at Retynol.com
+      </a>
+    </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-heading">
-    <div>
+  <!-- HERO (dark, clinical) -->
+  <section class="hero hero-clinical" aria-labelledby="hero-heading">
+    <div class="hero-main">
+      <p class="hero-kicker">Clinical Retinol Education</p>
       <h1 id="hero-heading" class="hero-title">
-        Understand retinol before you put it on your face.
+        Understand retinol before you let it reshape your skin.
       </h1>
       <p class="hero-subtitle">
-        Retinol, retinal and tretinoin are some of the most studied skincare ingredients we have.
-        Used correctly, they can soften fine lines, fade dark spots and smooth texture.
-        Used badly, they can wreck your skin barrier.
+        Retinol, retinal and tretinoin are among the most studied skincare actives. Used correctly,
+        they can smooth texture, soften lines and fade dark marks. Used badly, they can leave your
+        barrier raw, red and reactive.
       </p>
+
       <ul class="hero-list">
-        <li>Learn what retinol actually does in the skin – in plain language.</li>
-        <li>See when to choose cosmetic retinol, retinal or prescription tretinoin.</li>
-        <li>Build a beginner-friendly routine that your barrier can handle.</li>
+        <li>What retinol really does in the skin – beyond marketing claims.</li>
+        <li>When to choose cosmetic retinol, retinal or prescription tretinoin.</li>
+        <li>How to start a routine that your barrier can actually tolerate.</li>
       </ul>
-      <div class="hero-highlight">
-        This site is for education only. When you are ready to compare specific products,
-        visit our independent comparison hub at
-        <a href="https://retynol.com/">Retynol.com</a>.
+
+      <div class="hero-actions">
+        <a href="#retinol-101" class="btn-primary">
+          Start with Retinol 101
+          <span class="chevron">›</span>
+        </a>
+        <a href="https://retynol.com/" class="btn-secondary" target="_blank" rel="noopener">
+          Go to Retynol.com product comparison
+        </a>
       </div>
+
+      <p class="hero-note">
+        This site is for education only. When you are ready to evaluate specific products,
+        visit our independent comparison hub at <strong>Retynol.com</strong>.
+      </p>
     </div>
 
-    <aside class="hero-aside">
-      <div class="rating-pill">
-        <span class="star">★</span>
-        Most common goal: <strong>Smoother, clearer skin</strong>
+    <aside class="hero-aside hero-aside-card" aria-label="Clinical summary">
+      <div class="clinic-badge">
+        <span class="clinic-dot"></span>
+        Evidence-based · Independent · Affiliate-free
       </div>
-      <p class="hero-note">
-        The best retinol routine is the one you can actually stick to.
-        That usually means starting low, going slow and protecting your barrier.
+      <div class="clinic-metric">
+        <div class="clinic-label">Primary goal for most visitors</div>
+        <div class="clinic-value">Smoother, clearer, more even skin tone</div>
+      </div>
+      <div class="clinic-divider"></div>
+      <ul class="clinic-list">
+        <li><strong>1–3 months:</strong> texture and tone improvements.</li>
+        <li><strong>6–12 months:</strong> fine lines and collagen support.</li>
+        <li><strong>Always:</strong> daily broad-spectrum SPF is non-negotiable.</li>
+      </ul>
+      <p class="clinic-disclaimer">
+        Not medical advice. Talk to your own doctor or dermatologist about your skin.
       </p>
-      <a href="https://retynol.com/" class="btn-primary">
-        Compare top retinol serums at Retynol.com
-        <span class="chevron">›</span>
-      </a>
     </aside>
   </section>
 
-  <!-- MAIN ARTICLE CONTENT -->
+  <!-- RETINOL 101 -->
   <main class="article">
-
-    <article class="card">
-      <h1>Retinol 101 – What It Is and How It Works</h1>
+    <section id="retinol-101" class="card">
+      <h2>Retinol 101 – What It Is and How It Works</h2>
       <p>
-        Retinol is a form of vitamin A. When you put it on your skin, enzymes slowly convert it into
-        <strong>retinoic acid</strong> – the active molecule that tells skin cells to behave in a “younger”
-        way: divide more efficiently, make more collagen, and shed old cells more evenly.
+        Retinol is a form of vitamin A. Once applied to the skin, enzymes slowly convert it into
+        <strong>retinoic acid</strong> – the active molecule that tells skin cells to behave in a more
+        “youthful” way: divide more efficiently, make more collagen, and shed old cells more evenly.
       </p>
       <p>
-        Because this process takes time, retinol is usually <em>less irritating</em> than prescription
-        tretinoin, but it can still cause dryness and peeling when used too fast.
+        Because this conversion takes time, cosmetic retinol is usually <em>less irritating</em> than
+        prescription tretinoin. But it can still cause dryness, peeling and burning when introduced too
+        aggressively.
       </p>
 
-      <h2>What retinol can realistically do</h2>
-      <ul>
-        <li>Smooth uneven texture and fine lines over several months.</li>
-        <li>Help fade mild hyperpigmentation and post-acne marks.</li>
-        <li>Reduce clogged pores and some types of acne.</li>
-        <li>Strengthen the deeper layers of the skin when used consistently.</li>
-      </ul>
+      <div class="grid grid-2">
+        <div class="card-ghost">
+          <h3>What retinol can realistically do</h3>
+          <ul>
+            <li>Smooth mild uneven texture and fine lines over months.</li>
+            <li>Help fade post-acne marks and some types of hyperpigmentation.</li>
+            <li>Support collagen in deeper layers of the skin with consistent use.</li>
+            <li>Reduce clogged pores and comedonal acne in some people.</li>
+          </ul>
+        </div>
+        <div class="card-ghost">
+          <h3>What retinol cannot do</h3>
+          <ul>
+            <li>Replace sunscreen – UV protection is still essential.</li>
+            <li>Erase deep folds, sagging or severe sun damage.</li>
+            <li>Work overnight – meaningful changes take months, not days.</li>
+            <li>Guarantee the same result for every skin type and condition.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <h2>What retinol cannot do</h2>
-      <ul>
-        <li>Replace SPF – you still need daily sunscreen.</li>
-        <li>Completely erase deep wrinkles or sagging skin.</li>
-        <li>Work overnight – results are measured in months, not days.</li>
-      </ul>
-    </article>
-
-    <article class="card">
+    <!-- RETINOL VS RETINAL VS TRETINOIN -->
+    <section id="compare-options" class="card">
       <h2>Retinol vs Retinal vs Tretinoin</h2>
       <p>
         All three are vitamin A derivatives, but they sit at different points in the conversion chain
-        to retinoic acid.
+        to retinoic acid. The closer you are to retinoic acid, the faster – and often harsher – the effect.
       </p>
 
-      <h3>Cosmetic retinol</h3>
+      <div class="grid grid-3">
+        <div class="mini-card">
+          <h3>Cosmetic retinol</h3>
+          <p>
+            Needs two conversion steps to become retinoic acid. This makes it slower and generally
+            gentler. Ideal for beginners and long-term maintenance when combined with SPF.
+          </p>
+        </div>
+        <div class="mini-card">
+          <h3>Retinal (retinaldehyde)</h3>
+          <p>
+            Needs only one conversion step, so it is more potent at the same percentage.
+            A good option for people who already tolerate retinol and want slightly faster results
+            without jumping straight to prescription-only treatments.
+          </p>
+        </div>
+        <div class="mini-card">
+          <h3>Tretinoin</h3>
+          <p>
+            Prescription retinoic acid. Works directly at the receptor level, so it can bring visible
+            changes faster – but with a higher risk of irritation. Best used under medical supervision.
+          </p>
+        </div>
+      </div>
+
+      <p class="inline-note">
+        When you are ready to explore specific products in each category, see:
+        <a href="https://retynol.com/" target="_blank" rel="noopener">
+          Retynol.com – Independent product comparison
+        </a>.
+      </p>
+    </section>
+
+    <!-- ROUTINE -->
+    <section id="routine" class="card">
+      <h2>How to Build a Beginner-Friendly Retinol Routine</h2>
       <p>
-        Needs two conversion steps to become retinoic acid. This makes it slower and generally gentler.
-        Ideal for beginners and long-term maintenance.
+        Most barrier problems come from doing too much, too soon. A conservative, clinical approach
+        will usually get you further than “max strength from day one”.
       </p>
 
-      <h3>Retinal (retinaldehyde)</h3>
-      <p>
-        Needs only one conversion step, so it is more potent at the same percentage.
-        Good for people who already tolerate retinol and want a bit more power without going
-        straight to prescription.
-      </p>
-
-      <h3>Tretinoin (retinoic acid)</h3>
-      <p>
-        Prescription-only in many countries. It is already in the active form and works faster,
-        but also has a higher risk of irritation. Best used under medical supervision.
-      </p>
-
-      <p>
-        For a deeper dive into retinol vs retinal, see the guide on
-        <a href="https://retynol.com/retinol-vs-retinal.html">Retynol.com – Retinol vs Retinal</a>.
-      </p>
-    </article>
-
-    <article class="card">
-      <h2>How to Start a Beginner Retinol Routine</h2>
-      <p>
-        The biggest mistake people make is doing too much, too soon. Here is a simple, conservative
-        way to start if you have generally healthy skin:
-      </p>
-      <ol>
-        <li>Cleanse with a mild, non-foaming cleanser and gently pat skin dry.</li>
-        <li>Wait until the skin is completely dry (at least 10–15 minutes).</li>
-        <li>Apply a pea-sized amount of retinol to the whole face, avoiding eyes and corners of the nose.</li>
-        <li>Follow with a simple, fragrance-free moisturiser.</li>
-        <li>Start with 2 nights per week for at least 2–3 weeks before increasing.</li>
+      <ol class="numbered">
+        <li><strong>Prepare:</strong> cleanse with a mild, non-stripping cleanser and gently pat dry.</li>
+        <li><strong>Wait:</strong> allow skin to dry completely (10–15 minutes) to reduce stinging.</li>
+        <li><strong>Apply:</strong> use a pea-sized amount for the whole face, avoiding eye area and
+            corners of nose and mouth.</li>
+        <li><strong>Seal:</strong> follow with a simple, fragrance-free moisturiser.</li>
+        <li><strong>Frequency:</strong> start with 2 nights per week for at least 2–3 weeks before
+            increasing.</li>
       </ol>
-      <p>
-        If you are very nervous or prone to irritation, you can “sandwich” retinol between two layers
-        of moisturiser or apply it only once per week at first.
-      </p>
-      <p>
-        When you are ready to pick a specific product, check
-        <a href="https://retynol.com/best-for-beginners.html">Retynol.com – Best Retinol for Beginners</a>.
-      </p>
-    </article>
 
-    <article class="card">
+      <p>
+        Very reactive or nervous? Use the “sandwich method” – moisturiser → small amount of retinol →
+        another layer of moisturiser – or start with once weekly.
+      </p>
+      <p>
+        For step-by-step beginner product ideas, see
+        <a href="https://retynol.com/best-for-beginners.html" target="_blank" rel="noopener">
+          Retynol.com – Best retinol for beginners
+        </a>.
+      </p>
+    </section>
+
+    <!-- RISKS / SIDE EFFECTS -->
+    <section id="risks" class="card">
       <h2>Side Effects and When to Stop</h2>
       <p>
-        Mild dryness, tightness and light flaking are common when you first start retinol. These are
-        usually manageable if you slow down and moisturise more.
+        Mild dryness, tightness and light flaking are common when you first introduce retinol. These
+        can usually be managed by reducing frequency and moisturising more.
       </p>
 
-      <h3>Signs you are overdoing it</h3>
-      <ul>
-        <li>Burning or stinging that lasts more than a few minutes.</li>
-        <li>Red, shiny, “plastic” looking skin.</li>
-        <li>Cracked corners around the nose, mouth or eyes.</li>
-      </ul>
+      <div class="grid grid-2">
+        <div class="card-ghost">
+          <h3>Often manageable</h3>
+          <ul>
+            <li>Slight dryness or tight feeling.</li>
+            <li>Light flaking around nose and mouth.</li>
+            <li>Small breakouts (“purging”) in congested areas.</li>
+          </ul>
+        </div>
+        <div class="card-ghost">
+          <h3>Warning signs – pause use</h3>
+          <ul>
+            <li>Burning or stinging that persists more than a few minutes.</li>
+            <li>Red, shiny “plastic” looking skin.</li>
+            <li>Cracks and soreness around eyes, nose or mouth.</li>
+          </ul>
+        </div>
+      </div>
 
       <p>
-        If you see any of these, stop retinoids completely until your skin feels normal again.
-        Switch to a basic routine: gentle cleanser, bland moisturiser, sunscreen.
+        If you see warning signs, stop all retinoids until your skin feels normal again. Simplify your
+        routine to a gentle cleanser, bland moisturiser and daily sunscreen.
       </p>
 
-      <p>
-        Read more in the full irritation guide on
-        <a href="https://retynol.com/side-effects.html">Retynol.com – Retinol Side Effects</a>.
+      <p class="inline-note">
+        For a more detailed irritation guide, read:
+        <a href="https://retynol.com/side-effects.html" target="_blank" rel="noopener">
+          Retynol.com – Retinol side effects
+        </a>.
       </p>
 
-      <p style="font-size: 12px; color: #6b7280; margin-top: 10px;">
+      <p class="legal-note">
         This page is for general information only and is not medical advice. Always speak to your own
-        doctor or dermatologist if you’re worried about your skin or severe reactions.
+        doctor or dermatologist if you are worried about severe reactions, long-lasting redness,
+        infection or other skin concerns.
       </p>
-    </article>
+    </section>
 
-    <article class="card">
-      <h2>Who Should Be Careful or Avoid Retinol?</h2>
+    <!-- WHO SHOULD BE CAREFUL -->
+    <section class="card">
+      <h2>Who Should Be Extra Careful or Avoid Retinol?</h2>
       <ul>
-        <li>Pregnant or breastfeeding people (talk to your doctor first).</li>
-        <li>Those with uncontrolled eczema, rosacea or very reactive skin.</li>
+        <li>Pregnant or breastfeeding people – always discuss vitamin A products with your doctor.</li>
+        <li>Those with uncontrolled eczema, rosacea or highly reactive skin.</li>
         <li>Anyone using strong prescription treatments like oral isotretinoin.</li>
       </ul>
       <p>
-        In these cases, it is safer to work with a dermatologist who knows your skin and medical
-        history rather than self-experimenting.
+        In these situations, self-experimenting based on general internet advice is risky. A
+        dermatologist who knows your medical history is in a better position to guide you.
       </p>
-    </article>
+    </section>
 
-    <section class="card faq" aria-labelledby="faq-heading">
-      <h2 id="faq-heading" class="section-title">Retinol FAQ</h2>
+    <!-- FAQ BLOCK -->
+    <section id="faq" class="card faq">
+      <h2 class="section-title">Retinol FAQ</h2>
 
       <h3>Can I use retinol around my eyes?</h3>
       <p>
-        Some people tolerate retinol around the eyes, others do not. If you try it, start by using
-        a tiny amount over a layer of eye cream and only once per week. Dedicated eye products with
-        milder retinoids are often safer.
+        Some people tolerate retinol around the eyes, others do not. If you try it, start by applying
+        a tiny amount over a layer of eye cream, once per week. Dedicated eye formulas with milder
+        retinoids are often safer.
       </p>
 
       <h3>Can teenagers use retinol?</h3>
       <p>
         Teens with acne are more often prescribed adapalene or tretinoin under medical supervision.
-        Cosmetic retinol is usually not necessary unless recommended by a professional.
+        Cosmetic retinol is usually not necessary unless a professional recommends it.
       </p>
 
       <h3>Is “purging” normal?</h3>
       <p>
-        Retinoids can speed up how quickly clogged pores come to the surface, which may look like more
-        breakouts in the first weeks. This should calm down over time. If breakouts are widespread,
-        painful or last for months, talk to a dermatologist.
+        Retinoids can speed up the life cycle of clogged pores, which may temporarily increase
+        breakouts in the first weeks. This should gradually calm down. If breakouts are widespread,
+        painful or continue for months, see a dermatologist.
       </p>
     </section>
 
+    <!-- CTA → RETYNOL.COM -->
+    <section class="card cta-clinical">
+      <div class="cta-clinic-text">
+        <h2>Ready to choose a product?</h2>
+        <p>
+          Retinol.bio is designed to help you understand vitamin A skincare. When you feel confident
+          about the basics and want to compare real formulas, strengths and prices, head over to our
+          independent comparison hub.
+        </p>
+      </div>
+      <div class="cta-clinic-action">
+        <a href="https://retynol.com/" class="btn-primary btn-full" target="_blank" rel="noopener">
+          Go to Retynol.com – Independent retinol comparison
+          <span class="chevron">›</span>
+        </a>
+        <p class="cta-note">
+          Retynol.com may use affiliate links. Rankings are independent and not for sale.
+        </p>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="site-footer">
     <span>© <span id="year"></span> Retinol.bio – Evidence-based retinol education.</span>
-    <span>Operated by ronarn AS. Independent information site with links to Retynol.com.</span>
+    <span>Operated by ronarn AS, Norway. Independent information site with links to Retynol.com.</span>
     <span>Contact: <a href="mailto:info@retinol.bio">info@retinol.bio</a></span>
     <span>Business address: Pb. 1010 Lillestrøm Syd, 2012 Lillestrøm, Norway</span>
     <span>
       <a href="/privacy.html">Privacy &amp; Cookies</a> ·
       <a href="/about.html">About</a> ·
-      <a href="https://retynol.com/">Retynol.com – Product comparison</a>
+      <a href="https://retynol.com/" target="_blank" rel="noopener">Retynol.com – Product comparison</a>
     </span>
   </footer>
 
