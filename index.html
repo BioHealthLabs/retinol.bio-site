@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Retinol.bio – Evidence-Based Retinol Education (2025)</title>
+  <title>Retinol.bio – Evidence-Based Retinol Education (2026)</title>
   <meta name="description"
         content="Retinol.bio is a clinical, evidence-based guide to retinol, retinal and tretinoin. Learn how vitamin A works in the skin, how to start safely, manage side effects and when to see a dermatologist." />
   <meta name="robots" content="index,follow" />
@@ -86,7 +86,63 @@
   </script>
 
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Page-specific, safe additions (light monetization + trust-preserving) -->
+  <style>
+    .note-affiliate {
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      background: rgba(15, 23, 42, 0.03);
+      border-radius: 16px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      color: rgba(15, 23, 42, 0.78);
+      margin: 14px 0 0;
+    }
+    .note-affiliate strong { font-weight: 800; }
+    .cta-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .examples {
+      margin-top: 14px;
+    }
+    .examples-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .example-card {
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      border-radius: 16px;
+      padding: 14px;
+      background: rgba(15, 23, 42, 0.02);
+    }
+    .example-card h3 { margin: 0 0 6px; }
+    .example-card p { margin: 0 0 10px; color: rgba(15, 23, 42, 0.74); }
+    .example-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .example-micro {
+      margin-top: 10px;
+      font-size: 0.88rem;
+      color: rgba(15, 23, 42, 0.70);
+    }
+    .link-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      background: rgba(15, 23, 42, 0.03);
+      font-weight: 750;
+      font-size: 0.86rem;
+      line-height: 1;
+    }
+  </style>
 </head>
+
 <body>
 <div class="page">
 
@@ -98,7 +154,7 @@
         <span class="brand-text">Retinol.bio</span>
       </div>
       <div class="brand-tagline">
-        Clinical, evidence-based retinol education. No sponsorships. No fluff.
+        Clinical, evidence-based retinol education. No paid rankings. Minimal affiliate links.
       </div>
     </div>
 
@@ -117,7 +173,7 @@
   <!-- HERO (dark, clinical) -->
   <section class="hero hero-clinical" aria-labelledby="hero-heading">
     <div class="hero-main">
-      <p class="hero-kicker">Clinical Retinol Education</p>
+      <p class="hero-kicker">Clinical Retinoid Education</p>
       <h1 id="hero-heading" class="hero-title">
         Understand retinol before you let it reshape your skin.
       </h1>
@@ -147,12 +203,18 @@
         This site is for education only. When you are ready to evaluate specific products,
         visit our independent comparison hub at <strong>Retynol.com</strong>.
       </p>
+
+      <div class="note-affiliate" role="note" aria-label="Affiliate disclosure note">
+        <strong>Disclosure:</strong> Retinol.bio is education-first. In a few places we link to example products for availability.
+        Some links may be affiliate links, which means we may earn a small commission at no extra cost to you.
+        We do not accept payment for positive coverage or rankings.
+      </div>
     </div>
 
     <aside class="hero-aside hero-aside-card" aria-label="Clinical summary">
       <div class="clinic-badge">
         <span class="clinic-dot"></span>
-        Evidence-based · Independent · Affiliate-free
+        Evidence-based · Independent · Minimal affiliate exits
       </div>
       <div class="clinic-metric">
         <div class="clinic-label">Primary goal for most visitors</div>
@@ -205,6 +267,27 @@
           </ul>
         </div>
       </div>
+
+      <div class="examples">
+        <span class="link-badge" aria-hidden="true">Optional example</span>
+        <p class="example-micro">
+          If you want a “boring but safe” beginner-style option with supportive ingredients, this is a commonly chosen example:
+        </p>
+        <div class="cta-row">
+          <a class="btn-secondary"
+             href="https://www.amazon.com/dp/B07VWSN95S?tag=genecticscom-20"
+             target="_blank" rel="nofollow sponsored noopener"
+             aria-label="Example: CeraVe Resurfacing Retinol Serum on Amazon (affiliate)">
+            Example: CeraVe Resurfacing Retinol Serum (Amazon) <span class="chevron">›</span>
+          </a>
+          <a class="btn-secondary"
+             href="https://retynol.com/best-for-beginners.html"
+             target="_blank" rel="noopener"
+             aria-label="Best retinol for beginners on Retynol.com">
+            See beginner picks on Retynol.com
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- RETINOL VS RETINAL VS TRETINOIN -->
@@ -241,11 +324,68 @@
       </div>
 
       <p class="inline-note">
-        When you are ready to explore specific products in each category, see:
+        When you are ready to compare real formulas, strengths and prices, see:
         <a href="https://retynol.com/" target="_blank" rel="noopener">
           Retynol.com – Independent product comparison
         </a>.
       </p>
+
+      <div class="examples">
+        <span class="link-badge" aria-hidden="true">Optional examples</span>
+        <p class="example-micro">
+          If you tolerate retinol well and want a faster OTC “next step”, retinal is the usual upgrade path. Here are common examples:
+        </p>
+
+        <div class="examples-grid" aria-label="Retinoid examples">
+          <div class="example-card">
+            <h3>Retinal “upgrade” example</h3>
+            <p>Advanced option. Introduce slowly (1–2 nights/week initially).</p>
+            <div class="example-actions">
+              <a class="btn-secondary"
+                 href="https://www.amazon.com/dp/B0DGVB33G7?tag=genecticscom-20"
+                 target="_blank" rel="nofollow sponsored noopener"
+                 aria-label="Example: Medik8 Crystal Retinal 20 on Amazon (affiliate)">
+                Example: Medik8 Crystal Retinal 20 (Amazon) <span class="chevron">›</span>
+              </a>
+              <a class="btn-secondary"
+                 href="https://retynol.com/best-retinal-serums.html"
+                 target="_blank" rel="noopener">
+                Compare retinal options on Retynol.com
+              </a>
+            </div>
+          </div>
+
+          <div class="example-card">
+            <h3>Gentler retinal example</h3>
+            <p>Often chosen for comfort-first routines. Still start slow.</p>
+            <div class="example-actions">
+              <a class="btn-secondary"
+                 href="https://www.amazon.com/dp/B0DPNMY8WR?tag=genecticscom-20"
+                 target="_blank" rel="nofollow sponsored noopener"
+                 aria-label="Example: Avène Retrinal Intensive Multi-Corrective Cream on Amazon (affiliate)">
+                Example: Avène Retrinal (Amazon) <span class="chevron">›</span>
+              </a>
+              <a class="btn-secondary"
+                 href="https://retynol.com/retinol-vs-retinal.html"
+                 target="_blank" rel="noopener">
+                Read: Retinol vs retinal
+              </a>
+            </div>
+          </div>
+
+          <div class="example-card">
+            <h3>Prescription path (conceptual)</h3>
+            <p>Tretinoin is prescription retinoic acid. Discuss with a clinician if needed.</p>
+            <div class="example-actions">
+              <a class="btn-secondary"
+                 href="https://retynol.com/tretinoin-vs-retinol.html"
+                 target="_blank" rel="noopener">
+                Read: Tretinoin vs retinol <span class="chevron">›</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ROUTINE -->
@@ -270,6 +410,7 @@
         Very reactive or nervous? Use the “sandwich method” – moisturiser → small amount of retinol →
         another layer of moisturiser – or start with once weekly.
       </p>
+
       <p>
         For step-by-step beginner product ideas, see
         <a href="https://retynol.com/best-for-beginners.html" target="_blank" rel="noopener">
@@ -316,6 +457,27 @@
           Retynol.com – Retinol side effects
         </a>.
       </p>
+
+      <div class="examples">
+        <span class="link-badge" aria-hidden="true">Optional example</span>
+        <p class="example-micro">
+          When irritation hits, most people do best with simple barrier-supportive care and fewer actives.
+          One commonly used “recovery” example:
+        </p>
+        <div class="cta-row">
+          <a class="btn-secondary"
+             href="https://www.amazon.com/dp/B0BBKJSK6H?tag=genecticscom-20"
+             target="_blank" rel="nofollow sponsored noopener"
+             aria-label="Example: Avène Cicalfate+ Hydrating Skin Recovery Emulsion on Amazon (affiliate)">
+            Example: Avène Cicalfate+ Recovery Emulsion (Amazon) <span class="chevron">›</span>
+          </a>
+          <a class="btn-secondary"
+             href="https://retynol.com/side-effects.html"
+             target="_blank" rel="noopener">
+            Read the full irritation guide
+          </a>
+        </div>
+      </div>
 
       <p class="legal-note">
         This page is for general information only and is not medical advice. Always speak to your own
@@ -379,14 +541,13 @@
           <span class="chevron">›</span>
         </a>
         <p class="cta-note">
-          Retynol.com may use affiliate links. Rankings are independent and not for sale.
+          Retynol.com uses affiliate links. Rankings are independent and not for sale.
         </p>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-    <!-- FOOTER -->
+  <!-- FOOTER (your standard footer) -->
   <footer class="site-footer">
     <div class="footer-main">
       <span>© <span id="year"></span> Retinol.bio – Evidence-based retinol education.</span>
@@ -423,7 +584,6 @@
     </nav>
   </footer>
 
-
 </div>
 
 <script>
@@ -431,3 +591,4 @@
 </script>
 </body>
 </html>
+```0
