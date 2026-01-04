@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Retinol.bio – Evidence-Based Retinol Education (2026)</title>
+  <title>Retinol.bio – Evidence-Based Retinoid Education (2026)</title>
   <meta name="description"
-        content="Clinical, evidence-based education on retinol, retinal and tretinoin — plus practical product picks with transparent affiliate links. Learn how to start safely, manage side effects and choose the right strength." />
+        content="Clinical, evidence-based education on retinol, retinal and tretinoin — plus practical picks with transparent affiliate links. Learn routines, manage side effects and choose the right strength safely." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://retinol.bio/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Retinol.bio – Evidence-Based Retinoid Education (2026)" />
   <meta property="og:description"
-        content="Clinical retinol education + clear product picks for retinol and retinal. Learn routines, side effects and strength — without paid rankings." />
+        content="Clinical retinoid education + practical retinol and retinal picks. Learn how to start safely, manage irritation, and choose the right strength." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://retinol.bio/" />
   <meta property="og:image" content="https://retinol.bio/og-image-retinol-bio.jpg" />
@@ -89,56 +89,16 @@
 
   <!-- Page-specific additions (safe + isolated) -->
   <style>
-    /* ===== Hero affiliate rail (not hidden) ===== */
-    .affiliate-rail {
-      border: 1px solid rgba(15, 23, 42, 0.10);
-      border-radius: 18px;
-      padding: 16px;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      box-shadow: 0 10px 30px rgba(15,23,42,0.06);
+    /* ===== Hero headline tuning (Retynol.com feel) ===== */
+    .hero-clinical .hero-title {
+      letter-spacing: -0.02em;
+      line-height: 1.06;
     }
-    .affiliate-rail h2 { margin: 0 0 6px; font-size: 1.05rem; }
-    .affiliate-rail p { margin: 0 0 12px; color: rgba(15,23,42,0.72); line-height: 1.45; }
-    .affiliate-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
-    .affiliate-card {
-      border: 1px solid rgba(15, 23, 42, 0.10);
-      border-radius: 16px;
-      padding: 14px;
-      background: #fff;
-    }
-    .affiliate-card h3 { margin: 0 0 6px; font-size: 1rem; }
-    .affiliate-card .meta { margin: 0 0 10px; color: rgba(15,23,42,0.70); font-size: 0.95rem; line-height: 1.45; }
-    .affiliate-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    .affiliate-actions .btn-primary, .affiliate-actions .btn-secondary { white-space: nowrap; }
-    .affiliate-badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(15, 23, 42, 0.10);
-      background: rgba(15, 23, 42, 0.03);
-      font-size: 0.86rem;
-      font-weight: 750;
-      margin-bottom: 10px;
-    }
-    .affiliate-badge.pick {
-      border-color: rgba(236, 72, 153, 0.35);
-      background: rgba(236, 72, 153, 0.08);
-    }
-    .disclosure-note {
-      margin-top: 12px;
-      font-size: 0.92rem;
-      color: rgba(15,23,42,0.70);
+    .hero-clinical .hero-subtitle {
+      max-width: 62ch;
     }
 
-    /* ===== In-article sticky jump (clinical but usable) ===== */
+    /* ===== Sticky jump (clean + compact) ===== */
     .jump-nav {
       position: sticky;
       top: 10px;
@@ -165,12 +125,80 @@
       background: rgba(15,23,42,0.03);
     }
     .jump-nav a:hover {
-      border-color: rgba(236, 72, 153, 0.35);
-      background: rgba(236, 72, 153, 0.06);
+      border-color: rgba(236,72,153,0.35);
+      background: rgba(236,72,153,0.06);
     }
     .anchor-offset { scroll-margin-top: 92px; }
 
-    /* ===== Stronger CTA block inside article ===== */
+    /* ===== Picks section (NOT sidebar, NOT table) ===== */
+    .picks {
+      margin-top: 18px;
+    }
+    .picks-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .picks-head h2 { margin: 0; }
+    .picks-sub {
+      margin: 0 0 14px;
+      color: rgba(15,23,42,0.72);
+      line-height: 1.5;
+      max-width: 78ch;
+    }
+    .picks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    .pick-card {
+      border: 1px solid rgba(15,23,42,0.10);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fff;
+    }
+    .pick-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(15,23,42,0.10);
+      background: rgba(15,23,42,0.03);
+      font-size: 0.86rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .pick-badge.hot {
+      border-color: rgba(236,72,153,0.35);
+      background: rgba(236,72,153,0.08);
+    }
+    .pick-card h3 { margin: 0 0 6px; font-size: 1.02rem; }
+    .pick-card p { margin: 0 0 12px; color: rgba(15,23,42,0.72); line-height: 1.45; }
+    .pick-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .pick-actions .btn-primary,
+    .pick-actions .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .picks-disclosure {
+      margin-top: 12px;
+      font-size: 0.92rem;
+      color: rgba(15,23,42,0.70);
+    }
+    .picks-disclosure a { text-decoration: underline; }
+
+    /* ===== Small helper CTA block inside article ===== */
     .cta-picks {
       border: 1px solid rgba(15, 23, 42, 0.10);
       border-radius: 18px;
@@ -180,9 +208,7 @@
     }
     .cta-picks h3 { margin: 0 0 6px; }
     .cta-picks p { margin: 0 0 12px; color: rgba(15,23,42,0.72); }
-    .cta-picks .hero-actions { margin-top: 6px; }
 
-    /* Mobile tweaks */
     @media (max-width: 560px) {
       .jump-nav { padding: 8px 10px; gap: 8px; top: 6px; }
       .jump-nav a { font-size: 0.88rem; padding: 7px 10px; }
@@ -201,14 +227,14 @@
         <span class="brand-text">Retinol.bio</span>
       </div>
       <div class="brand-tagline">
-        Clinical, evidence-based retinoid education — with transparent product picks.
+        Clinical, evidence-based retinoid education. No paid rankings.
       </div>
     </div>
 
     <nav class="main-nav" aria-label="Primary navigation">
       <a href="#retinol-101">Basics</a>
       <a href="#compare-options">Retinol vs retinal vs tretinoin</a>
-      <a href="#picks" class="anchor-offset">Product picks</a>
+      <a href="#picks">Product picks</a>
       <a href="#routine">Routine</a>
       <a href="#risks">Side effects</a>
       <a href="#faq">FAQ</a>
@@ -218,26 +244,25 @@
     </nav>
   </header>
 
-  <!-- HERO (dark, clinical) -->
+  <!-- HERO -->
   <section class="hero hero-clinical" aria-labelledby="hero-heading">
     <div class="hero-main">
       <p class="hero-kicker">Clinical Retinoid Education</p>
 
-      <!-- UPDATED H1 to match retynol.com style (clear + actionable) -->
+      <!-- FIXED: stronger, Retynol-like headline -->
       <h1 id="hero-heading" class="hero-title">
-        Learn how retinol works — before you choose a product.
+        Learn retinol — before you buy it.
       </h1>
 
       <p class="hero-subtitle">
-        Retinol, retinal and tretinoin are powerful vitamin A derivatives.
-        Used correctly, they improve texture, tone and fine lines.
-        Used incorrectly, they can damage your skin barrier.
+        Retinol and retinal can transform texture and tone, but only if you respect the barrier.
+        This site explains what vitamin A does, how to start safely, and how to choose the right strength.
       </p>
 
       <ul class="hero-list">
-        <li>What retinol actually does in the skin — beyond marketing claims.</li>
-        <li>When to choose retinol, retinal or prescription tretinoin.</li>
-        <li>How to start safely without burning your barrier.</li>
+        <li>Understand retinol, retinal and tretinoin without marketing noise.</li>
+        <li>Start safely: frequency, buffering, and when to level up.</li>
+        <li>Fix irritation fast (and avoid the common mistakes).</li>
       </ul>
 
       <div class="hero-actions">
@@ -251,8 +276,7 @@
       </div>
 
       <p class="hero-note">
-        Educational content first. Product picks are included below with clear affiliate disclosure.
-        No paid rankings.
+        Education first. Product picks are shown below with clear affiliate disclosure. No paid rankings.
       </p>
 
       <nav class="jump-nav" aria-label="Jump to section">
@@ -265,101 +289,121 @@
       </nav>
     </div>
 
-    <!-- HERO ASIDE: make affiliates visible and purposeful -->
-    <aside class="hero-aside hero-aside-card affiliate-rail" aria-label="Recommended product picks">
-      <h2 id="picks" class="anchor-offset">Recommended picks (retinol + retinal)</h2>
-      <p>
-        If you want practical shopping shortcuts, these are widely-used, reputable options.
-        Links may earn a commission at no extra cost to you.
-      </p>
-
-      <div class="affiliate-grid">
-        <div class="affiliate-card">
-          <div class="affiliate-badge pick">Retinol pick: Beginner-friendly</div>
-          <h3>CeraVe Resurfacing Retinol Serum</h3>
-          <p class="meta">Encapsulated retinol + barrier support. Good first retinoid for many people.</p>
-          <div class="affiliate-actions">
-            <a class="btn-primary"
-               href="https://www.amazon.com/dp/B07VWSN95S?tag=genecticscom-20"
-               target="_blank" rel="nofollow sponsored noopener"
-               data-track="affiliate" data-product="cerave_resurfacing" data-destination="amazon" data-placement="hero_picks">
-              Check price <span class="chevron">›</span>
-            </a>
-            <a class="btn-secondary"
-               href="https://retynol.com/best-for-beginners.html"
-               target="_blank" rel="noopener"
-               data-track="outbound" data-placement="hero_picks" data-label="retynol_beginners">
-              Read guide
-            </a>
-          </div>
-        </div>
-
-        <div class="affiliate-card">
-          <div class="affiliate-badge">Retinol pick: Budget/value</div>
-          <h3>The Ordinary Granactive Retinoid 2% Emulsion</h3>
-          <p class="meta">Value-focused option many tolerate well vs classic retinol.</p>
-          <div class="affiliate-actions">
-            <a class="btn-primary"
-               href="https://www.amazon.com/dp/B071HHSMTT?tag=genecticscom-20"
-               target="_blank" rel="nofollow sponsored noopener"
-               data-track="affiliate" data-product="ordinary_granactive_2" data-destination="amazon" data-placement="hero_picks">
-              Check price <span class="chevron">›</span>
-            </a>
-            <a class="btn-secondary"
-               href="https://retynol.com/"
-               target="_blank" rel="noopener"
-               data-track="outbound" data-placement="hero_picks" data-label="retynol_home">
-              Compare hub
-            </a>
-          </div>
-        </div>
-
-        <div class="affiliate-card">
-          <div class="affiliate-badge pick">Retinal pick: Next step</div>
-          <h3>Medik8 Crystal Retinal</h3>
-          <p class="meta">Retinal (one step closer to active retinoic acid). Often faster than retinol.</p>
-          <div class="affiliate-actions">
-            <a class="btn-primary"
-               href="https://www.amazon.com/s?k=Medik8+Crystal+Retinal&tag=genecticscom-20"
-               target="_blank" rel="nofollow sponsored noopener"
-               data-track="affiliate" data-product="medik8_crystal_retinal_search" data-destination="amazon" data-placement="hero_picks">
-              Check price <span class="chevron">›</span>
-            </a>
-            <a class="btn-secondary"
-               href="https://retynol.com/best-retinal-serums.html"
-               target="_blank" rel="noopener"
-               data-track="outbound" data-placement="hero_picks" data-label="retynol_retinal_serums">
-              Retinal guide
-            </a>
-          </div>
-        </div>
-
-        <div class="affiliate-card">
-          <div class="affiliate-badge">Retinal pick: Gentler option</div>
-          <h3>Avène Retrinal</h3>
-          <p class="meta">Comfort-first retinal approach. Still introduce slowly and keep routine simple.</p>
-          <div class="affiliate-actions">
-            <a class="btn-primary"
-               href="https://www.amazon.com/s?k=Avene+Retrinal&tag=genecticscom-20"
-               target="_blank" rel="nofollow sponsored noopener"
-               data-track="affiliate" data-product="avene_retrinal_search" data-destination="amazon" data-placement="hero_picks">
-              Check price <span class="chevron">›</span>
-            </a>
-            <a class="btn-secondary"
-               href="https://retynol.com/retinol-vs-retinal.html"
-               target="_blank" rel="noopener"
-               data-track="outbound" data-placement="hero_picks" data-label="retynol_retinol_vs_retinal">
-              Compare retinoids
-            </a>
-          </div>
-        </div>
+    <aside class="hero-aside hero-aside-card" aria-label="Clinical summary">
+      <div class="clinic-badge">
+        <span class="clinic-dot"></span>
+        Evidence-based · Independent · Practical
       </div>
-
-      <p class="disclosure-note">
-        Transparency: Retinol.bio contains affiliate links. Rankings are independent and not for sale.
-        See <a href="https://disclosure.bio" target="_blank" rel="noopener">Affiliate Disclosure</a>.
+      <div class="clinic-metric">
+        <div class="clinic-label">Primary goal for most visitors</div>
+        <div class="clinic-value">Smoother texture, clearer tone, fewer clogged pores</div>
+      </div>
+      <div class="clinic-divider"></div>
+      <ul class="clinic-list">
+        <li><strong>6–10 weeks:</strong> texture/tone changes start.</li>
+        <li><strong>3–6 months:</strong> fine lines and pigmentation progress.</li>
+        <li><strong>Always:</strong> daily SPF is non-negotiable.</li>
+      </ul>
+      <p class="clinic-disclaimer">
+        Not medical advice. Severe reactions require clinical guidance.
       </p>
     </aside>
+  </section>
+
+  <!-- PICKS (full-width, visible, not ugly) -->
+  <section id="picks" class="card picks anchor-offset" aria-labelledby="picks-heading">
+    <div class="picks-head">
+      <h2 id="picks-heading">Recommended picks (retinol + retinal)</h2>
+    </div>
+
+    <p class="picks-sub">
+      If you want shopping shortcuts, these are widely-used options with clear positioning.
+      Links may earn a commission at no extra cost to you. Rankings are independent and not for sale.
+    </p>
+
+    <div class="picks-grid">
+      <!-- RETINOL: Beginner -->
+      <article class="pick-card">
+        <div class="pick-badge hot">Retinol pick: Beginner-friendly</div>
+        <h3>CeraVe Resurfacing Retinol Serum</h3>
+        <p>Encapsulated retinol + barrier support. Often the lowest-regret starting point.</p>
+        <div class="pick-actions">
+          <a class="btn-primary"
+             href="https://www.amazon.com/dp/B07VWSN95S?tag=genecticscom-20"
+             target="_blank" rel="nofollow sponsored noopener">
+            Check price <span class="chevron">›</span>
+          </a>
+          <a class="btn-secondary"
+             href="https://retynol.com/best-for-beginners.html"
+             target="_blank" rel="noopener">
+            Beginner guide
+          </a>
+        </div>
+      </article>
+
+      <!-- RETINOL: Value -->
+      <article class="pick-card">
+        <div class="pick-badge">Retinol pick: Budget/value</div>
+        <h3>The Ordinary Granactive Retinoid 2% Emulsion</h3>
+        <p>Value-focused alternative many tolerate better than classic retinol.</p>
+        <div class="pick-actions">
+          <a class="btn-primary"
+             href="https://www.amazon.com/dp/B071HHSMTT?tag=genecticscom-20"
+             target="_blank" rel="nofollow sponsored noopener">
+            Check price <span class="chevron">›</span>
+          </a>
+          <a class="btn-secondary"
+             href="https://retynol.com/"
+             target="_blank" rel="noopener">
+            Compare hub
+          </a>
+        </div>
+      </article>
+
+      <!-- RETINAL: Next step -->
+      <article class="pick-card">
+        <div class="pick-badge hot">Retinal pick: Next step</div>
+        <h3>Medik8 Crystal Retinal</h3>
+        <p>Retinal (one step closer to retinoic acid). Often faster — also easier to overdo.</p>
+        <div class="pick-actions">
+          <a class="btn-primary"
+             href="https://www.amazon.com/s?k=Medik8+Crystal+Retinal&tag=genecticscom-20"
+             target="_blank" rel="nofollow sponsored noopener">
+            Check price <span class="chevron">›</span>
+          </a>
+          <a class="btn-secondary"
+             href="https://retynol.com/best-retinal-serums.html"
+             target="_blank" rel="noopener">
+            Retinal guide
+          </a>
+        </div>
+      </article>
+
+      <!-- RETINAL: Gentle -->
+      <article class="pick-card">
+        <div class="pick-badge">Retinal pick: Gentler option</div>
+        <h3>Avène Retrinal</h3>
+        <p>Comfort-first retinal approach. Still introduce slowly and keep routine simple.</p>
+        <div class="pick-actions">
+          <a class="btn-primary"
+             href="https://www.amazon.com/s?k=Avene+Retrinal&tag=genecticscom-20"
+             target="_blank" rel="nofollow sponsored noopener">
+            Check price <span class="chevron">›</span>
+          </a>
+          <a class="btn-secondary"
+             href="https://retynol.com/retinol-vs-retinal.html"
+             target="_blank" rel="noopener">
+            Retinol vs retinal
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <p class="picks-disclosure">
+      Disclosure: We may earn commissions via affiliate links. See:
+      <a href="https://disclosure.bio" target="_blank" rel="noopener">Affiliate Disclosure</a> and
+      <a href="https://disclaimer.bio" target="_blank" rel="noopener">Medical &amp; Affiliate Disclaimer</a>.
+    </p>
   </section>
 
   <!-- MAIN ARTICLE -->
@@ -370,8 +414,8 @@
       <h2>Retinol 101 – What It Is and How It Works</h2>
       <p>
         Retinol is a form of vitamin A. Once applied to the skin, enzymes slowly convert it into
-        <strong>retinoic acid</strong> — the active molecule that changes gene expression in skin cells.
-        This influences cell turnover, collagen support and pigment distribution over time.
+        <strong>retinoic acid</strong> — the active molecule that influences cell turnover, collagen support
+        and pigment distribution over time.
       </p>
       <p>
         Because this conversion takes time, cosmetic retinol is usually <em>less irritating</em> than
@@ -401,10 +445,8 @@
       </div>
 
       <div class="cta-picks">
-        <h3>Want practical product picks now?</h3>
-        <p>
-          Use our comparison hub for formulas, strengths and pricing — or the retinal guide if you want a faster step-up.
-        </p>
+        <h3>Want the product comparison version?</h3>
+        <p>Use Retynol.com for tables, pricing and category-specific guides.</p>
         <div class="hero-actions">
           <a href="https://retynol.com/" class="btn-primary" target="_blank" rel="noopener">
             Go to Retynol.com comparison
@@ -443,7 +485,7 @@
         <div class="mini-card">
           <h3>Tretinoin</h3>
           <p>
-            Prescription retinoic acid. Works directly and can deliver faster change, but with a higher irritation risk.
+            Prescription retinoic acid. Works directly and can deliver faster change, but with higher irritation risk.
             Best used under medical supervision.
           </p>
         </div>
@@ -451,7 +493,7 @@
 
       <p class="inline-note">
         Prefer product-level comparisons? Visit
-        <a href="https://retynol.com/" target="_blank" rel="noopener">Retynol.com</a> for side-by-side shopping guides.
+        <a href="https://retynol.com/" target="_blank" rel="noopener">Retynol.com</a>.
       </p>
     </section>
 
@@ -476,8 +518,10 @@
       </p>
 
       <p class="inline-note">
-        Need a practical beginner list? See
-        <a href="https://retynol.com/best-for-beginners.html" target="_blank" rel="noopener">Retynol.com – Best retinol for beginners</a>.
+        Practical beginner product ideas:
+        <a href="https://retynol.com/best-for-beginners.html" target="_blank" rel="noopener">
+          Retynol.com – Best retinol for beginners
+        </a>.
       </p>
     </section>
 
@@ -514,8 +558,10 @@
       </p>
 
       <p class="inline-note">
-        For a detailed irritation guide, read:
-        <a href="https://retynol.com/side-effects.html" target="_blank" rel="noopener">Retynol.com – Retinol side effects</a>.
+        For a detailed irritation guide:
+        <a href="https://retynol.com/side-effects.html" target="_blank" rel="noopener">
+          Retynol.com – Retinol side effects
+        </a>.
       </p>
 
       <p class="legal-note">
@@ -569,8 +615,8 @@
       <div class="cta-clinic-text">
         <h2>Ready to choose a product?</h2>
         <p>
-          Retinol.bio is designed to teach you the basics and protect your barrier.
-          When you want to compare formulas, strengths and pricing, use our independent shopping hub.
+          Retinol.bio teaches the basics and protects your barrier.
+          When you want side-by-side comparisons, strengths and pricing, use our product hub.
         </p>
       </div>
       <div class="cta-clinic-action">
@@ -586,7 +632,7 @@
 
   </main>
 
-  <!-- FOOTER (your standard footer for .bio network) -->
+  <!-- FOOTER (your standard footer) -->
   <footer class="site-footer">
     <div class="footer-main">
       <span>© <span id="year"></span> Retinol.bio – Evidence-based retinol education.</span>
@@ -628,42 +674,5 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
-<!-- Optional: lightweight click tracking (affiliate + outbound) -->
-<script>
-  (function () {
-    function hasGtag(){ return (typeof window.gtag === "function"); }
-    function fire(name, params){ if (!hasGtag()) return; try { window.gtag("event", name, params || {}); } catch(e){} }
-
-    document.addEventListener("click", function (e) {
-      var a = e.target && e.target.closest ? e.target.closest("a") : null;
-      if (!a) return;
-
-      var href = a.getAttribute("href") || "";
-      var track = a.getAttribute("data-track") || "";
-      var product = a.getAttribute("data-product") || "";
-      var placement = a.getAttribute("data-placement") || "unknown";
-      var destination = a.getAttribute("data-destination") || "";
-
-      if (track === "affiliate") {
-        fire("affiliate_click", {
-          product: product || "unknown",
-          placement: placement,
-          destination: destination || "unknown",
-          url: href
-        });
-        return;
-      }
-
-      var isOutbound = href.indexOf("http://") === 0 || href.indexOf("https://") === 0 || href.indexOf("//") === 0;
-      var isSameDomain = href.indexOf("retinol.bio") !== -1 || href.indexOf("/") === 0 || href.indexOf("#") === 0;
-
-      if (isOutbound && !isSameDomain) {
-        fire("outbound_click", { placement: placement, url: href });
-      }
-    }, { passive: true });
-  })();
-</script>
 </body>
 </html>
-```0
